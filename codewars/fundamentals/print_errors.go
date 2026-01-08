@@ -11,6 +11,7 @@ func PrinterError(s string) string {
 	count := 0
 
 	for _, str := range runeStr {
+		// validates the rest of the letters after m
 		if !strings.Contains(letters, string(str)) {
 			count++
 		}
